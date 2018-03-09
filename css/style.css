@@ -34,6 +34,12 @@
 body{
   background-color: rgb(52, 46, 74);
 }
+form{
+  background-color: #F93B50;
+}
+input{
+  border-radius: 10px;
+}
 .back-top {
     width:25px;
     height:25px;
@@ -50,7 +56,16 @@ body{
   justify-content: center;
   align-items: center;
 }
-.hidden{
+.email, form{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+ border: 0.5rem outset pink;
+ border-radius: 12px;
+ font: bold 1rem sans-serif;
+ background-color: #F93B50;
+}
+.hidden, .skills{
   display: none;
 }
 .intro{
@@ -64,14 +79,117 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 100px;
+}
+.bio{
+  width: 100%;
+  height: 600px;
+
+}
+.headShot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headShot > img{
+  border-radius: 250px;
+  width: 100%;
+  height: 500px;
+}
+.aboutMe{
+  width:90%;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 1.3em;
+}
+.headShot, .aboutMe{
+  margin-top: 50px;
+  width: 50%;
+  height:550px;
+  float: left;
+}
+.links{
+  width: 100%;
+  height:200px;
+  margin-top: 125px;
+  text-align: center;
+  border: 0.5rem outset pink;
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  background-color: #F93B50;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.links > a {
+  font-size: 3em;
+  color: white;
+  text-decoration: none;
+  margin-left: 5%;
+}
+.links > a:hover{
+  color: red;
 }
 
+#send{
+  background-color: #D30E38;
+  border: none;
+  height: 25px;
+
+}
+#text{
+  width:25%;
+  height:75px;
+}
 #back{
   color: white;
   font-family: monospace;
   font-size: 1em;
 }
+#check, #resume{
+  height: 100px;
+  background-color: #815F76;
+  border: none;
+  border-radius: 5px;
+}
+#check > a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+#check:hover, #resume:hover{
+  background-color: #AC0C37;
+}
+#go{
+  font-size: .9em;
+}
+#moneyMaker{
+  width:100%;
+}
+#msg, .aboutMe > p{
+  text-align: center;
+}
+#shrink{
+  background-color: #815F76;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
  @media (max-width: 667px) {
+   .email, #moneyMaker, .buttons{
+     display: none;
+   }
+   .hidden{
+     display:inline;
+   }
+   .headShot, .aboutMe{
+     width:100%;
+   }
+   .aboutMe{
+     font-size: 1em;
+   }
    .new > img, .logo{
      width: 100%;
    }
@@ -81,14 +199,22 @@ body{
    .logo{
      height: 400px;
    }
+   .links >a {
+     font-size: 1.5em;
+   }
+   .links{
+     height: 50%;
+   }
    .intro{
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
    }
- }
-<<<<<<< HEAD
-=======
-
->>>>>>> bc0c5277e8217bc91e43228904f13e4d3932c2b9
+.skills{
+  display:inline;
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: -100px;
+  margin-top: -100px;
+}
