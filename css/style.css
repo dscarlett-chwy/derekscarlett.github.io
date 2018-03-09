@@ -171,6 +171,9 @@ input{
 #msg, .aboutMe > p{
   text-align: center;
 }
+#resume{
+  color:white;
+}
 #shrink{
   background-color: #815F76;
   border: none;
